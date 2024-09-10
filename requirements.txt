@@ -6,7 +6,7 @@ langchain-anthropic
 langchain-groq
 langchain-huggingface
 langchain-google-genai
-pydantic==1.10.2  # Specific version as you are importing from pydantic.v1
+pydantic
 crewai
 langchain-qdrant
 qdrant-client
