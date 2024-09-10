@@ -130,7 +130,7 @@ class RetrieverTool(BaseTool):
             self.qa_chatbot = qa_chatbot
             self.description = "A tool that can be used to retrieve information from the vector store using the QAChatBot."
             self.args_schema = RetrieverToolSchema
-            self._generate_description()
+            # self._generate_description()
 
     def _run(self, **kwargs: Any) -> Any:
         try:
