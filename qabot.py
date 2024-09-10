@@ -1,5 +1,5 @@
 import os
-from crewai import Agent, Task, Crew, Process 
+# from crewai import Agent, Task, Crew, Process 
 from langchain_qdrant import QdrantVectorStore
 from langchain.prompts import ChatPromptTemplate
 from langchain.callbacks import StdOutCallbackHandler
@@ -7,7 +7,8 @@ from langchain_groq import ChatGroq
 from langchain.chains import RetrievalQA
 from dotenv import load_dotenv
 from pydantic.v1 import BaseModel, Field
-from crewai_tools import BaseTool
+from langchain_core.tools import BaseTool
+# from crewai_tools import BaseTool
 from typing import Optional, Type, Any
 import warnings
 warnings.filterwarnings("ignore")
