@@ -85,7 +85,7 @@ def get_google_chat(model_name:str, api_key=None, temperature=DEFAULT_TEMPERATUR
     return ChatGoogleGenerativeAI(model=model_name, temperature=temperature, google_api_key=api_key, safety_settings={HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT: HarmBlockThreshold.BLOCK_NONE }) # type: ignore
 
 # Groq models
-def get_groq_chat(model_name:str, api_key=None, temperature=DEFAULT_TEMPERATURE):
+def get_groq_chat(model_name:str, api_key="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", temperature=DEFAULT_TEMPERATURE):
     api_key = api_key or get_api_key("groq")
     return ChatGroq(model_name=model_name, temperature=temperature, api_key=api_key) # type: ignore
    
