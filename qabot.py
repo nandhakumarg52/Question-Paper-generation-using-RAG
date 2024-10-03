@@ -168,4 +168,4 @@ class QGen:
         """
         inputs = {"question": self.question}
         res = self.rag_tool._run(**inputs)
-        return str(res)
+        return str(res["result"])
