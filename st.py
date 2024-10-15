@@ -9,7 +9,7 @@ from llm import LLModel
 load_dotenv()
 
 def main():
-    st.title("SAMBA PUBLICATIONS -**Question Paper Generator**")
+    st.title("**Question Paper Generator**")
     st.write("Upload a PDF, enter a query, and specify marks distribution to generate a custom question paper.")
 
     # File uploader for the PDF
